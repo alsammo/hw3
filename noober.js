@@ -7,6 +7,7 @@ function pageLoad() {
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
   console.log(ride)
+  
 
   // these variables map to the elements on the finished page;
   // assign the proper value to each variable
@@ -22,5 +23,80 @@ function pageLoad() {
   // passenger3PickupAddressLine1, passenger3PickupAddressLine2
   // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
   
+
+  let levelOfService  //2= Noober Purple, 1= Noober XL,  0=Noober X
+  let passengers = [
+    { 
+      passenger1Name : "John Smith",
+      passenger1Phone : "312-123-4567",
+      passenger1NumberOfPassengers : 1,
+      passenger1PickupAddressLine1 : "10 Madison St",
+      passenger1PickupAddressLine2 : " Chicago, IL",
+      passenger1DropoffAddressLine1 : "20 State St, ",
+      passenger1DropoffAddressLine2 : "Chicago, IL",
+      numberOfPassengers : 1,
+      purpleRequested = true, // True=luxury, False=regular
+      
+    }
+    {
+
+    
+      passenger2Name : "Jennifer Watson",
+      passenger2Phone : "312-987-6543",
+      passenger2NumberOfPassengers : 1,
+      passenger2PickupAddressLine1 : "30 Madison St, ",
+      passenger2PickupAddressLine2 : "Chicago, IL",
+      passenger2DropoffAddressLine1 : "40 State St,",
+      passenger2DropoffAddressLine2 : " Chicago, IL", 
+      numberOfPassengers : 4,
+      purpleRequested = false, // True=luxury, False=regular
+      
+    }
+  ]
+
+    i = math.round (math.random()) // This will give us randomly either 0 or 1, i.e. 0=first passenger, 1= second passenger
+    
+    If (passengers.length > 1){
+      levelOfService = "Noober Pool" // More than one passenger in the array
+    }
+
+    else If (passengers[i].purpleRequested == true) {
+      levelOfService = "Noober Purple"
+    }
+
+    else If (passengers[i].numberOfPassengers >3) {
+      levelOfService = "Noober XL"
+
+    else {
+       levelOfService = "Noober X"
+      }
+    }
+
+ 
+      
+    }
+
+    
+
+
+      "passengerDetails": { "first": "Thad", "last": "Farrell", "phoneNumber": "(989) 614-4016" }, 
+      "pickupLocation": { "address": "551 W Elm St", "city": "Chicago", "state": "IL", "zip": "60612" }, 
+      "dropoffLocation": { "address": "2550 S Wabash Ave", "city": "Chicago", "state": "IL", "zip": "60614" }, 
+      "numberOfPassengers": 1, 
+      "purpleRequested": false 
+    }, 
+    { 
+      "passengerDetails": { "first": "Russel", "last": "Gislason", "phoneNumber": "(254) 616-5796" }, 
+      "pickupLocation": { "address": "4848 N Damen Ave", "city": "Chicago", "state": "IL", "zip": "60625" }, 
+      "dropoffLocation": { "address": "142 E Ontario St", "city": "Chicago", "state": "IL", "zip": "60464" }, 
+      "numberOfPassengers": 1, 
+      "purpleRequested": false 
+    },
+    ...
+  ]
+
+
+
+
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
