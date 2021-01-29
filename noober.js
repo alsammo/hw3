@@ -24,8 +24,8 @@ function pageLoad() {
   // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
   
 
-  let levelOfService  //2= Noober Purple, 1= Noober XL,  0=Noober X
-  let passengers = [
+  let levelOfService  //Noober Pool, Noober Purple, Noober XL,  Noober X
+  let ride = [
     { 
       passenger1Name : "John Smith",
       passenger1Phone : "312-123-4567",
@@ -55,15 +55,15 @@ function pageLoad() {
   ]
 
     
-    If (passengers.length > 1){
+    If (ride.length > 1){
       levelOfService = "Noober Pool" // More than one passenger in the array
     }
 
-    else If (passengers.purpleRequested == true) {
+    else If (ride.purpleRequested == true) {
       levelOfService = "Noober Purple"
     }
 
-    else If (passengers.numberOfPassengers >3) {
+    else If (ride.numberOfPassengers >3) {
       levelOfService = "Noober XL"
 
     else {
