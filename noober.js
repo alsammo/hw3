@@ -37,7 +37,7 @@ function pageLoad() {
       numberOfPassengers : 1,
       purpleRequested = true, // True=luxury, False=regular
       
-    }
+    },
     {
 
     
@@ -54,17 +54,16 @@ function pageLoad() {
     }
   ]
 
-    i = math.round (math.random()) // This will give us randomly either 0 or 1, i.e. 0=first passenger, 1= second passenger
     
     If (passengers.length > 1){
       levelOfService = "Noober Pool" // More than one passenger in the array
     }
 
-    else If (passengers[i].purpleRequested == true) {
+    else If (passengers.purpleRequested == true) {
       levelOfService = "Noober Purple"
     }
 
-    else If (passengers[i].numberOfPassengers >3) {
+    else If (passengers.numberOfPassengers >3) {
       levelOfService = "Noober XL"
 
     else {
