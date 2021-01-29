@@ -74,26 +74,12 @@ function pageLoad() {
 
  
       
-    }
+    
 
     
 
 
-      "passengerDetails": { "first": "Thad", "last": "Farrell", "phoneNumber": "(989) 614-4016" }, 
-      "pickupLocation": { "address": "551 W Elm St", "city": "Chicago", "state": "IL", "zip": "60612" }, 
-      "dropoffLocation": { "address": "2550 S Wabash Ave", "city": "Chicago", "state": "IL", "zip": "60614" }, 
-      "numberOfPassengers": 1, 
-      "purpleRequested": false 
-    }, 
-    { 
-      "passengerDetails": { "first": "Russel", "last": "Gislason", "phoneNumber": "(254) 616-5796" }, 
-      "pickupLocation": { "address": "4848 N Damen Ave", "city": "Chicago", "state": "IL", "zip": "60625" }, 
-      "dropoffLocation": { "address": "142 E Ontario St", "city": "Chicago", "state": "IL", "zip": "60464" }, 
-      "numberOfPassengers": 1, 
-      "purpleRequested": false 
-    },
-    ...
-  ]
+       
 
 
 
